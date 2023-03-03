@@ -1,0 +1,6 @@
+@import '../../GlobalStyles/vars-mixins';
+
+$myStringVar: 'my string value';
+@import 'normalize';
+@import 'vars-mixins';
+@import 'reset';

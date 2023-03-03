@@ -1,0 +1,10 @@
+@import '../../GlobalStyles/vars-mixins';
+
+$myStringVar: 'my string value';
+.block {
+  svg {
+    // fill: $thirdColor;
+    width: 20px;
+    margin: 1px;
+  }
+}

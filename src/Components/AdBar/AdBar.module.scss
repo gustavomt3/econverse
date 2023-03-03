@@ -1,0 +1,52 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerAdbar {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 794px;
+  padding: 6px 15px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* para o IE 10+ */
+  scrollbar-width: none; /* para o Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .block {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-right: 30px;
+    &:first-child {
+      p {
+        color: $thirdColor;
+        font-size: 12px;
+        font-weight: $medium;
+        span {
+          color: $secondColor;
+          font-weight: $semibold;
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    svg {
+      fill: $thirdColor;
+      width: 20px;
+      margin: 1px;
+      margin-right: 9px;
+    }
+    p {
+      color: $secondColor;
+      font-size: 12px;
+      font-weight: $semibold;
+      span {
+        color: $thirdColor;
+        font-weight: $medium;
+      }
+    }
+  }
+}

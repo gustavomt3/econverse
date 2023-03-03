@@ -1,6 +1,6 @@
 //React
 import React from 'react';
-//Styles
+// //Styles
 import './GlobalStyles/App.module.scss';
 //Context
 import { GlobalProvider } from './Contexts/GlobalContext';
@@ -8,10 +8,12 @@ import { GlobalProvider } from './Contexts/GlobalContext';
 import Header from './Components/Header/Header';
 //Pages
 import Home from './Pages/Home';
+import AdBar from './Components/AdBar/AdBar';
 
 function App() {
   return (
     <GlobalProvider>
+      <AdBar />
       <Header />
       <Home />
     </GlobalProvider>
