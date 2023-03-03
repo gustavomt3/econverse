@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src=".github/logo-econverse.svg" alt="Logo Econverse" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gustavomt3/econverse">
+  <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/gustavomt3/econverse/master">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gustavomt3/econverse">
+</p>
+<br>
 
-## Available Scripts
+# Documentação
 
-In the project directory, you can run:
+## Descrição do projeto
 
-### `npm start`
+O projeto tem as seguintes funções:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Ao acessar a página principal a aplicação puxa os itens da API (https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) e dispõe em alguns pontos pela página;
+- Ao clicar no card do produto se abre um pop up com as infos do produto;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias
 
-### `npm test`
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
 
-### `npm run build`
+### Pré-Processadores
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [SASS](https://sass-lang.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Automatizadores
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Gulp](https://gulpjs.com/)
 
-### `npm run eject`
+## Deploy do projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##### Link de acesso: https://deupetch.store/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como executar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Como rodar o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Primeiro Passo: para rodar o projeto e instalar as dependências é imprecindível ter instalado o Node.js na maquina. Em tecnologias tem o link para você fazer o download do Node.js e sua instalação;
+# Segundo Passo: clone esse repositório em sua maquia;
+# Terceiro passo: instale as dependências executando o comando abaixo no terminal
+$ npm install
+# Para iniciar o projeto execute o comando abaixo no terminal
+$ npm start
+```
 
-## Learn More
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+    <img src=".github/layout.jpg" alt="Layout Site" />
+</p>
