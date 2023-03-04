@@ -266,10 +266,10 @@
     width: 90vw;
     height: 100vh;
     top: 0;
+    left: -90vw;
     z-index: 500;
     padding: 30px 20px 0 20px;
-    -webkit-animation: slideLeftExit 1s ease 0s 1 normal forwards;
-    animation: slideLeftExit 1s ease 0s 1 normal forwards;
+    animation: slideLeft 1s ease 0s 1 normal forwards;
     &.active {
       flex-direction: column;
       -webkit-animation: slideRight 1s ease 0s 1 normal forwards;
@@ -325,9 +325,8 @@
     width: 100vw;
     height: 100vh;
     top: 0;
+    left: -100%;
     background-color: rgb(0, 0, 0, 0.5);
-    -webkit-animation: slideLeftExit 1.2s ease 0s 1 normal forwards;
-    animation: slideLeftExit 1.2s ease 0s 1 normal forwards;
     &.active {
       -webkit-animation: slideRight 700ms ease 0s 1 normal forwards;
       animation: slideRight 700ms ease 0s 1 normal forwards;
@@ -337,26 +336,13 @@
 
 @keyframes slideRight {
   0% {
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideLeftExit {
-  0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
