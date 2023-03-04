@@ -1,1 +1,362 @@
 @import '../../GlobalStyles/vars-mixins';
+
+.containerGeneral {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .spansHamburguer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 400;
+    padding: 20px 13px 20px 20px;
+    @include desktop {
+      display: none;
+    }
+    .linha1 {
+      position: absolute;
+      background-color: $secondColor;
+      height: 4px;
+      width: 33px;
+      border: none;
+      border-radius: 4px;
+      left: 0;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      &.active {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: $secondColor;
+      }
+    }
+    .linha2 {
+      position: absolute;
+      background-color: $secondColor;
+      height: 4px;
+      width: 33px;
+      border: none;
+      border-radius: 4px;
+      top: 10px;
+      left: 0;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      &.active {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 18px;
+        background-color: $secondColor;
+      }
+    }
+    .linha3 {
+      position: absolute;
+      background-color: $secondColor;
+      height: 4px;
+      width: 33px;
+      border: none;
+      border-radius: 4px;
+      top: 26px;
+      left: 0;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      &.active {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 18px;
+        background-color: $secondColor;
+      }
+    }
+  }
+  .containerBlock1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1310px;
+    padding: 7px 15px 12px 15px;
+    border-top: 1px solid $fourthColor;
+    border-bottom: 1px solid $fourthColor;
+    .block1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1168px;
+      .logo {
+        display: flex;
+        @include desktop {
+          flex-grow: 1;
+        }
+        svg {
+          width: 100%;
+          max-width: 115px;
+          fill: $secondColor;
+          @include desktop {
+            max-width: 139px;
+          }
+        }
+      }
+      .search {
+        display: none;
+        align-items: center;
+        flex-grow: 4;
+        margin-right: 61px;
+        input {
+          flex-grow: 1;
+          font-size: 14px;
+          font-weight: $medium;
+          height: 48px;
+          padding-left: 24px;
+          background-color: $fifthColor;
+          border: none;
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+          outline-style: none;
+          &::placeholder {
+            color: $thirdColor;
+          }
+        }
+        button {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-grow: 0;
+          background-color: $fifthColor;
+          border: none;
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 48px;
+          padding-right: 24px;
+          svg {
+            width: 20px;
+            fill: $thirdColor;
+          }
+        }
+        @include desktop {
+          display: flex;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        min-width: 70px;
+        @include desktop {
+          flex-grow: 1;
+          max-width: 216px;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          &:first-child {
+            display: none;
+            @include desktop {
+              display: flex;
+            }
+          }
+          &:nth-child(3) {
+            display: none;
+            @include desktop {
+              display: flex;
+            }
+          }
+        }
+        svg {
+          width: 25px;
+          fill: $thirdColor;
+        }
+      }
+    }
+  }
+  .containerBlock2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1310px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+    box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+    .block2 {
+      width: 100%;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      padding: 10px 0;
+      display: none;
+
+      @include desktop {
+        display: flex;
+      }
+      ul {
+        width: 100%;
+        max-width: 1141px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            color: $thirdColor;
+            font-size: 12px;
+            font-weight: $semibold;
+            text-transform: uppercase;
+            svg {
+              width: 20px;
+              fill: $thirdColor;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .block3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    @include desktop {
+      display: none;
+    }
+    input {
+      flex-grow: 1;
+      height: 38px;
+      padding-left: 20px;
+      background-color: $fifthColor;
+      border: none;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      outline-style: none;
+      &::placeholder {
+        color: $thirdColor;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 0;
+      background-color: $fifthColor;
+      border: none;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 38px;
+      padding-right: 20px;
+      svg {
+        width: 20px;
+        fill: $thirdColor;
+      }
+    }
+  }
+  .navHamburguer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $seventhColor;
+    width: 90vw;
+    height: 100vh;
+    top: 0;
+    z-index: 500;
+    padding: 30px 20px 0 20px;
+    -webkit-animation: slideLeftExit 1s ease 0s 1 normal forwards;
+    animation: slideLeftExit 1s ease 0s 1 normal forwards;
+    &.active {
+      flex-direction: column;
+      -webkit-animation: slideRight 1s ease 0s 1 normal forwards;
+      animation: slideRight 1s ease 0s 1 normal forwards;
+    }
+    ul {
+      &:first-child {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-self: flex-end;
+        min-width: 80px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          &:nth-child(2) {
+            display: none;
+          }
+          &:last-child {
+            display: none;
+          }
+        }
+        svg {
+          width: 25px;
+          fill: $thirdColor;
+        }
+      }
+      &:last-child {
+        li {
+          margin-bottom: 10px;
+          a {
+            display: flex;
+            align-items: center;
+            color: $thirdColor;
+            font-weight: $semibold;
+            text-transform: uppercase;
+          }
+        }
+        svg {
+          width: 25px;
+          margin-right: 10px;
+          fill: $thirdColor;
+        }
+      }
+    }
+  }
+  .shadowHamburguer {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    -webkit-animation: slideLeftExit 1.2s ease 0s 1 normal forwards;
+    animation: slideLeftExit 1.2s ease 0s 1 normal forwards;
+    &.active {
+      -webkit-animation: slideRight 700ms ease 0s 1 normal forwards;
+      animation: slideRight 700ms ease 0s 1 normal forwards;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeftExit {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

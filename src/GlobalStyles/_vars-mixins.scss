@@ -9,7 +9,7 @@
 }
 
 @mixin desktop {
-  @media only screen and (min-width: 1081px) {
+  @media only screen and (min-width: 1024px) {
     @content;
   }
 }
@@ -34,10 +34,10 @@
 $primaryColor: #3b3b3b;
 $secondColor: #f71963;
 $thirdColor: #9f9f9f;
-$fourthColor: #9f9f9f;
-$fifthColor: #f8f8f8;
+$fourthColor: #f0f0f0;
+$fifthColor: #f6f5f2;
 $sixthColor: #f2f2f2;
-$seventhColor: #cdcdce;
+$seventhColor: #fff;
 
 /////////////////////////
 ////      Fonts      ////

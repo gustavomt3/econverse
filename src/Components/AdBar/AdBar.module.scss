@@ -11,7 +11,7 @@
   -ms-overflow-style: none; /* para o IE 10+ */
   scrollbar-width: none; /* para o Firefox */
   &::-webkit-scrollbar {
-    display: none;
+    display: none; /* para o Chrome, Safari e Opera */
   }
   .block {
     display: flex;
