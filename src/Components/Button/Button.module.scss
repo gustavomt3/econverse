@@ -1,0 +1,12 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.button {
+  color: $seventhColor;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: $secondColor;
+  border: none;
+  border-radius: 5px;
+}
