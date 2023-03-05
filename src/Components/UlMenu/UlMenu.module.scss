@@ -1,0 +1,10 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.active {
+  a {
+    color: $secondColor !important;
+  }
+  svg {
+    fill: $secondColor !important;
+  }
+}
