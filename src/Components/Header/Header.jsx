@@ -15,7 +15,7 @@ const Header = () => {
   //Context
   const { hamburguer, setHamburguer, activeHamburguer } =
     React.useContext(GlobalContext);
-  //Components
+  //Component
   const activeClass = hamburguer ? styles.active : '';
 
   return (

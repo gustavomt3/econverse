@@ -21,9 +21,9 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
   @include desktop {
-    max-width: 1315px;
-    padding: 0 15px;
+    max-width: 1310px;
   }
 }
 
@@ -38,6 +38,8 @@ $fourthColor: #f0f0f0;
 $fifthColor: #f6f5f2;
 $sixthColor: #f2f2f2;
 $seventhColor: #fff;
+$octaveColor: #f4f4f4;
+$ninthColor: #4e4e4e;
 
 /////////////////////////
 ////      Fonts      ////

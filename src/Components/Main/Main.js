@@ -2,6 +2,7 @@
 import React from 'react';
 //Components
 import MainBanner from '../MainBanner/MainBanner';
+import Categories from '../Categories/Categories';
 //Styles
 import styles from './Main.module.scss';
 //Images
@@ -16,6 +17,7 @@ function Main() {
         subtitle="50% Off nos produtos "
         textButton="Ver Produto"
       />
+      <Categories />
     </>
   );
 }
