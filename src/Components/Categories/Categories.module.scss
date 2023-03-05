@@ -1,80 +1,79 @@
 @import '../../GlobalStyles/vars-mixins';
 
 .containerGeneral {
-  padding: 20px 0 19px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-right: 0;
   @include tablet {
-    padding: 34px 0 19px;
+    padding-top: 34px;
   }
-  .container {
-    padding-right: 0;
-    .ulCategories {
+  .ulCategories {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    -ms-overflow-style: none; /* para o IE 10+ */
+    scrollbar-width: none; /* para o Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* para o Chrome, Safari e Opera */
+    }
+    li {
       display: flex;
-      justify-content: space-between;
-      overflow: scroll;
-      -ms-overflow-style: none; /* para o IE 10+ */
-      scrollbar-width: none; /* para o Firefox */
-      &::-webkit-scrollbar {
-        display: none; /* para o Chrome, Safari e Opera */
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      margin-right: 25px;
+      cursor: pointer;
+      @include tablet {
+        margin-right: 53px;
       }
-      li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-shrink: 0;
-        margin-right: 25px;
-        cursor: pointer;
-        @include tablet {
-          margin-right: 53px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        span {
+          color: $secondColor;
         }
-        &:last-child {
-          margin-right: 0;
-        }
-        &:hover {
-          span {
-            color: $secondColor;
-          }
-          svg {
-            fill: $secondColor;
-          }
-          div {
-            background-color: $seventhColor;
-          }
-        }
-        &.active {
-          span {
-            color: $secondColor;
-          }
-          svg {
-            fill: $secondColor;
-          }
-          div {
-            background-color: $seventhColor;
-          }
+        svg {
+          fill: $secondColor;
         }
         div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 128px;
-          height: 128px;
-          border-radius: 10px;
-          background-color: $octaveColor;
-          -webkit-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
-          -moz-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
-          box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
-          margin-bottom: 22px;
-          svg {
-            fill: #000;
-            width: 61px;
-          }
+          background-color: $seventhColor;
         }
+      }
+      &.active {
         span {
-          color: $ninthColor;
-          text-transform: capitalize;
-          font-weight: $medium;
-          line-height: 24px;
+          color: $secondColor;
         }
+        svg {
+          fill: $secondColor;
+        }
+        div {
+          background-color: $seventhColor;
+        }
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 128px;
+        height: 128px;
+        border-radius: 10px;
+        background-color: $octaveColor;
+        -webkit-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
+        -moz-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
+        box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
+        margin-bottom: 22px;
+        svg {
+          fill: #000;
+          width: 61px;
+        }
+      }
+      span {
+        color: $ninthColor;
+        text-transform: capitalize;
+        font-weight: $medium;
+        line-height: 24px;
       }
     }
   }

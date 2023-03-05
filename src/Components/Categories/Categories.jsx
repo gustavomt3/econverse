@@ -24,20 +24,18 @@ function Categories() {
   }
 
   return (
-    <section className={styles.containerGeneral}>
-      <nav className={styles.container}>
-        <ul className={styles.ulCategories}>
-          {dataImagesCategories.map((item, index) => (
-            <CategoryItem
-              key={index}
-              item={item}
-              isActive={index === activeIndex}
-              onClick={() => handleCategoryClick(index)}
-            />
-          ))}
-        </ul>
-      </nav>
-    </section>
+    <nav className={`${styles.container} ${styles.containerGeneral}`}>
+      <ul className={styles.ulCategories}>
+        {dataImagesCategories.map((item, index) => (
+          <CategoryItem
+            key={index}
+            item={item}
+            isActive={index === activeIndex}
+            onClick={() => handleCategoryClick(index)}
+          />
+        ))}
+      </ul>
+    </nav>
   );
 }
 
