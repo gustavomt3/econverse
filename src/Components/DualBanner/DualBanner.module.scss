@@ -9,7 +9,6 @@
   @include desktop {
     flex-direction: row;
   }
-  margin-bottom: 100px;
   .banner1,
   .banner2 {
     display: flex;
@@ -23,7 +22,7 @@
       font-size: 30px;
       font-weight: $bold;
       left: 40px;
-      bottom: 140px;
+      bottom: 115px;
       @include tablet {
         font-size: 40px;
         bottom: 176px;
@@ -37,7 +36,7 @@
       font-size: 14px;
       line-height: 24px;
       left: 40px;
-      bottom: 80px;
+      bottom: 60px;
       @include tablet {
         bottom: 120px;
       }
@@ -48,11 +47,13 @@
       font-weight: $extrabold;
       text-transform: uppercase;
       width: 131px;
-      height: 41px;
+      height: 32px;
       left: 40px;
       bottom: 20px;
+      cursor: pointer;
       @include tablet {
         bottom: 40px;
+        height: 41px;
       }
     }
   }
