@@ -1,7 +1,7 @@
 //React
 import React from 'react';
 //Data Request
-import { dataImagesCategories } from '../../Data/categoriesRequest';
+import { dataImagesCategories } from '../../Data/dataRequest';
 //Styles
 import styles from './Categories.module.scss';
 

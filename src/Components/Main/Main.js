@@ -7,6 +7,7 @@ import MainBanner from '../MainBanner/MainBanner';
 import Categories from '../Categories/Categories';
 import ProductList from '../ProductList/ProductList';
 import DualBanner from '../DualBanner/DualBanner';
+import Brands from '../Brands/Brands';
 //Styles
 import styles from './Main.module.scss';
 //Images
@@ -46,6 +47,7 @@ function Main() {
         textBanner2="Lorem ipsum dolor sit amet, consectetur"
         textButton="confira"
       />
+      <Brands />
     </main>
   );
 }
