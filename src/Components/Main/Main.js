@@ -12,6 +12,7 @@ import styles from './Main.module.scss';
 //Images
 import imgBanner from '../../Assests/imgBanner.jpg';
 import imgDualBanner from '../../Assests/imgDualBanner.jpg';
+import imgDualBanner1 from '../../Assests/imgDualBanner1.png';
 
 function Main() {
   //Context
@@ -29,6 +30,16 @@ function Main() {
       <DualBanner
         imgBanner1={imgDualBanner}
         imgBanner2={imgDualBanner}
+        titleBanner1="Parceiros"
+        titleBanner2="Parceiros"
+        textBanner1="Lorem ipsum dolor sit amet, consectetur"
+        textBanner2="Lorem ipsum dolor sit amet, consectetur"
+        textButton="confira"
+      />
+      <ProductList title="Produtos relacionados" option="ver-todos" />
+      <DualBanner
+        imgBanner1={imgDualBanner1}
+        imgBanner2={imgDualBanner1}
         titleBanner1="Parceiros"
         titleBanner2="Parceiros"
         textBanner1="Lorem ipsum dolor sit amet, consectetur"

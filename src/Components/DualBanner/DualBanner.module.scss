@@ -14,7 +14,7 @@
   .banner2 {
     display: flex;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     max-width: 590px;
     height: auto;
     h2 {
@@ -60,18 +60,6 @@
     margin-bottom: 30px;
     @include desktop {
       margin-bottom: 0;
-    }
-  }
-  .banner2 {
-    @include desktop {
-      justify-content: flex-end;
-    }
-    button,
-    p,
-    h2 {
-      @include breakSpecial {
-        left: 60px;
-      }
     }
   }
 }
