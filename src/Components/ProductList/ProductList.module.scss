@@ -1,0 +1,50 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerGeneral {
+  padding: 21px 0 35px;
+  .loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+  }
+  .titleOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      h2 {
+        text-align: center;
+        color: $secondColor;
+        font-size: 30px;
+        font-weight: $bold;
+        line-height: 45px;
+        margin: 0 34px;
+        line-height: 36px;
+        @include tablet {
+          min-width: max-content;
+        }
+      }
+      span {
+        display: flex;
+        width: 90%;
+        height: 1px;
+        background-color: $tenthColor;
+      }
+    }
+    .verTodos {
+      color: $eleventhColor;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      font-size: 15px;
+      font-weight: $bold;
+      line-height: 22px;
+    }
+  }
+}

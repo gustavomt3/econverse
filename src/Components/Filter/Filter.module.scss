@@ -1,0 +1,32 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerFilter {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  padding-left: 15px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* para o IE 10+ */
+  scrollbar-width: none; /* para o Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* para o Chrome, Safari e Opera */
+  }
+  li {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-basis: 150px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    color: $eleventhColor;
+    flex-grow: 1;
+    cursor: pointer;
+    border: 1px solid $thirteenthColor;
+    &.active {
+      color: $secondColor;
+      font-weight: $bold;
+    }
+  }
+}

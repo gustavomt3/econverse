@@ -1,1 +1,7 @@
 @import '../../GlobalStyles/vars-mixins';
+
+.containerGeneral {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

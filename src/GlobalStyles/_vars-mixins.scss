@@ -14,6 +14,12 @@
   }
 }
 
+@mixin teste {
+  @media only screen and (max-width: 590px) {
+    @content;
+  }
+}
+
 /////////////////////////
 ////Containers & Flex////
 /////////////////////////
@@ -40,6 +46,10 @@ $sixthColor: #f2f2f2;
 $seventhColor: #fff;
 $octaveColor: #f4f4f4;
 $ninthColor: #4e4e4e;
+$tenthColor: #dedede;
+$eleventhColor: #3f3f40;
+$twelfthColor: #808080;
+$thirteenthColor: #bdbdbd;
 
 /////////////////////////
 ////      Fonts      ////

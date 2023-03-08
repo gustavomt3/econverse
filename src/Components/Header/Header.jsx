@@ -13,8 +13,7 @@ import LogoVtex from '../../Assests/LogoVtex';
 
 const Header = () => {
   //Context
-  const { hamburguer, setHamburguer, activeHamburguer } =
-    React.useContext(GlobalContext);
+  const { hamburguer, activeHamburguer } = React.useContext(GlobalContext);
   //Component
   const activeClass = hamburguer ? styles.active : '';
 

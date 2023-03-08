@@ -1,0 +1,30 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.slickSlide {
+  div {
+    &:last-child,
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+    &:nth-of-type(2) {
+      padding: 10px 0 !important;
+    }
+  }
+  > div {
+    padding: 10px 0;
+    @include desktop {
+      padding: 0;
+    }
+    > div {
+      div {
+        display: flex;
+        justify-content: center;
+        &:nth-of-type(2) {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
