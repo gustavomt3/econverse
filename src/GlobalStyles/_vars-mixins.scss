@@ -14,8 +14,8 @@
   }
 }
 
-@mixin teste {
-  @media only screen and (max-width: 590px) {
+@mixin breakSpecial {
+  @media only screen and (min-width: 1150px) {
     @content;
   }
 }
@@ -55,10 +55,11 @@ $thirteenthColor: #bdbdbd;
 ////      Fonts      ////
 /////////////////////////
 /* Legenda: 400 = Regular / 700 = Bold */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
 $primaryFont: 'Poppins', sans-serif;
 $ligth: 300;
 $medium: 500;
 $semibold: 600;
 $bold: 700;
+$extrabold: 900;

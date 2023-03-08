@@ -1,0 +1,77 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerGeneral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 15px 30px 15px;
+  @include desktop {
+    flex-direction: row;
+  }
+  margin-bottom: 100px;
+  .banner1,
+  .banner2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 590px;
+    height: auto;
+    h2 {
+      position: absolute;
+      color: $seventhColor;
+      font-size: 30px;
+      font-weight: $bold;
+      left: 40px;
+      bottom: 140px;
+      @include tablet {
+        font-size: 40px;
+        bottom: 176px;
+        line-height: 60px;
+      }
+    }
+    p {
+      position: absolute;
+      max-width: 200px;
+      color: $seventhColor;
+      font-size: 14px;
+      line-height: 24px;
+      left: 40px;
+      bottom: 80px;
+      @include tablet {
+        bottom: 120px;
+      }
+    }
+    button {
+      position: absolute;
+      line-height: 24px;
+      font-weight: $extrabold;
+      text-transform: uppercase;
+      width: 131px;
+      height: 41px;
+      left: 40px;
+      bottom: 20px;
+      @include tablet {
+        bottom: 40px;
+      }
+    }
+  }
+  .banner1 {
+    margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+  .banner2 {
+    @include desktop {
+      justify-content: flex-end;
+    }
+    button,
+    p,
+    h2 {
+      @include breakSpecial {
+        left: 60px;
+      }
+    }
+  }
+}
