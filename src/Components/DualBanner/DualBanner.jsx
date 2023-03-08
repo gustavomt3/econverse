@@ -6,7 +6,6 @@ import Button from '../Button/Button';
 import styles from './DualBanner.module.scss';
 
 function DualBanner({
-  height,
   imgBanner1,
   imgBanner2,
   textButton,
@@ -24,7 +23,7 @@ function DualBanner({
         {textButton && <Button text={textButton} />}
       </div>
       <div className={styles.banner2}>
-        {imgBanner1 && <img src={imgBanner1} alt={imgBanner1} />}
+        {imgBanner2 && <img src={imgBanner2} alt={imgBanner2} />}
         {titleBanner2 && <h2>{titleBanner2}</h2>}
         {textBanner2 && <p>{textBanner2}</p>}
         {textButton && <Button text={textButton} />}

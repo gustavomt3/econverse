@@ -27,7 +27,6 @@ function Main() {
       <Categories />
       <ProductList title="Produtos relacionados" option="filtro" />
       <DualBanner
-        height={350}
         imgBanner1={imgDualBanner}
         imgBanner2={imgDualBanner}
         titleBanner1="Parceiros"
