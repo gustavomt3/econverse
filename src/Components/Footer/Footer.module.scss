@@ -1,0 +1,188 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerGeneral {
+  background-color: #2a2a2a;
+  margin-top: 134px;
+  padding: 33px 0 19px;
+  .container {
+    .line1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      @include desktop {
+        flex-direction: row;
+      }
+      .columns {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        @include tablet {
+          order: 1;
+          flex-direction: row;
+        }
+        p {
+          color: $seventhColor;
+          font-size: 13px;
+          font-weight: $bold;
+          margin-bottom: 24px;
+        }
+        a {
+          color: $seventhColor;
+          font-size: 12px;
+          font-weight: $ligth;
+          line-height: 32px;
+          text-transform: uppercase;
+        }
+        .about {
+          margin-bottom: 40px;
+          @include tablet {
+            margin-right: 93px;
+          }
+          .ulAbout {
+            margin-bottom: 35px;
+            @include desktop {
+              margin-bottom: 60px;
+            }
+          }
+          .social {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include tablet {
+              width: 80%;
+            }
+          }
+        }
+        .infos {
+          margin-bottom: 40px;
+          @include tablet {
+            margin-right: 47px;
+          }
+          p {
+            text-transform: uppercase;
+          }
+        }
+        .payments {
+          p {
+            text-transform: uppercase;
+          }
+          .ulPayments {
+            display: flex;
+            flex-direction: column;
+            li {
+              width: 70%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 23px;
+              @include tablet {
+                width: 100%;
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+              img {
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        padding: 40px 30px;
+        background-color: $seventhColor;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        @include tablet {
+          order: 2;
+          align-self: flex-end;
+        }
+        .title {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+          p,
+          span {
+            color: $eleventhColor;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 18px;
+            font-weight: $ligth;
+            line-height: 26px;
+          }
+          span {
+            font-size: 21px;
+            font-weight: $bold;
+            line-height: 26px;
+          }
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 31px;
+          span {
+            text-align: center;
+            font-size: 12px;
+            font-weight: $ligth;
+            line-height: 19px;
+          }
+        }
+        .input {
+          display: flex;
+          input {
+            width: 100%;
+            margin-right: 9px;
+            height: 45px;
+            &::placeholder {
+              color: $thirdColor;
+              font-size: 12px;
+              padding-left: 25px;
+            }
+          }
+          button {
+            width: 62px;
+            height: 45px;
+            font-size: 14px;
+            font-weight: $bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .line2 {
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .text {
+        margin-bottom: 20px;
+        @include tablet {
+          max-width: 698px;
+          margin-bottom: 0;
+        }
+        p {
+          color: $seventhColor;
+          font-size: 10px;
+        }
+      }
+      .brands {
+        display: flex;
+        svg {
+          fill: $seventhColor;
+          width: 106px;
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

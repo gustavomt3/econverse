@@ -48,6 +48,7 @@ function Main() {
         textButton="confira"
       />
       <Brands />
+      <ProductList title="Produtos relacionados" option="ver-todos" />
     </main>
   );
 }

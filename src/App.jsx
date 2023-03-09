@@ -5,10 +5,11 @@ import './GlobalStyles/App.module.scss';
 //Context
 import { GlobalProvider } from './Contexts/GlobalContext';
 //Components
+import AdBar from './Components/AdBar/AdBar';
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 //Pages
 import Home from './Pages/Home';
-import AdBar from './Components/AdBar/AdBar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AdBar />
       <Header />
       <Home />
+      <Footer />
     </GlobalProvider>
   );
 }
