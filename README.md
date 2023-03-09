@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Deploy do projeto
 
-##### Link de acesso: https://deupetch.store/
+##### Link de acesso:
 
 ## Como executar
 
