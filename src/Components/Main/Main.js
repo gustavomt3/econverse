@@ -8,6 +8,7 @@ import Categories from '../Categories/Categories';
 import ProductList from '../ProductList/ProductList';
 import DualBanner from '../DualBanner/DualBanner';
 import Brands from '../Brands/Brands';
+import CardModal from '../CardModal/CardModal';
 //Styles
 import styles from './Main.module.scss';
 //Images
@@ -17,7 +18,7 @@ import imgDualBanner1 from '../../Assests/imgDualBanner1.png';
 
 function Main() {
   //Context
-  const { modalCard, setModalCard, data } = React.useContext(GlobalContext);
+  const { modalCard, setModalCard } = React.useContext(GlobalContext);
   return (
     <main className={styles.containerGeneral}>
       <MainBanner
@@ -49,6 +50,7 @@ function Main() {
       />
       <Brands />
       <ProductList title="Produtos relacionados" option="ver-todos" />
+      {modalCard && <CardModal data={modalCard} setModalCard={setModalCard} />}
     </main>
   );
 }
