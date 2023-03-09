@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Deploy do projeto
 
-##### Link de acesso:
+##### Link de acesso: https://econverse-bpn7o8pe2-gustavomt3-gmailcom.vercel.app/
 
 ## Como executar
 
@@ -48,6 +48,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 $ npm install
 # Para iniciar o projeto execute o comando abaixo no terminal
 $ npm start
+# Para buildar
+$ npm build
 ```
 
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
