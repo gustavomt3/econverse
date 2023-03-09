@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Deploy do projeto
 
-##### Link de acesso: https://econverse-bpn7o8pe2-gustavomt3-gmailcom.vercel.app/
+##### Link de acesso: https://econverse-git-master-gustavomt3-gmailcom.vercel.app/
 
 ## Como executar
 
